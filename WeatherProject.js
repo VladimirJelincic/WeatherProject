@@ -20,7 +20,7 @@ var WeatherProject = React.createClass({
     _handleTextChange: function (event) {
         var zip = event.nativeEvent.text;
         this.setState({zip: zip});
-        var url = 'http://api.openweathermap.org/data/2.5/weather?zip=' + zip + '&appid=37243dda1c3f5c55a991a8658288b0d0';
+        var url = 'http://api.openweathermap.org/data/2.5/weather?zip=' + zip + '&appid=zzz';
         console.log(url);
         fetch(url)
             .then((response) => response.json())
